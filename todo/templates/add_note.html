@@ -1,0 +1,22 @@
+{% load crispy_forms_filters %}
+
+<h2>Add Notes</h2>
+<form method="POST" class="note-form">
+  {% csrf_token %}
+  {{ form|crispy }}
+  <button type="submit" class="save btn btn-primary">Save</button>
+
+</form>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <img width="200px" height="200px" src="https://catherineasquithgallery.com/uploads/posts/2021-03/1614550105_12-p-memi-na-belom-fone-13.png">
+    </div>
+    <div class="col">
+      <img width="200px" height="200px" src="https://www.meme-arsenal.com/memes/4330ca156acab4f58b6f3345feaa09fd.jpg">
+    </div>
+    <div class="col">
+      <img width="200px" height="200px" src="https://avatars.mds.yandex.net/get-zen_doc/1692094/pub_5e69da3d39bed14bd43c1b88_5e6c941d58c7246c0e427338/scale_1200">
+    </div>
+  </div>
+</div>
